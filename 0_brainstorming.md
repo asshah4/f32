@@ -75,37 +75,11 @@ Importance
 
 #### Hypothesis
 
-[I hypothesize that disturbances of the neurocardiac axis, assessed by
-both heart and brain metrics, associate with autonomic dysfunction,
-which can be measured by *Dyx*]{.underline}. As such, Dyx is a useful
-metric in both efforts to risk stratify for CAD, as well as detect
-neurovisceral dysfunction. We propose to study *Dyx* by measuring HRV
-through ambulatory ECG patches (BioStamp®, MC10 Inc.) in subjects with
-chronic stable angina undergoing evaluation in the Emory Cardiovascular
-Biobank. The Biobank is a prospective cohort study of individuals
-undergoing clinically indicated cardiac catherization in which conducts
-validated neuropsychological assessments are also made.^18^ The data we
-collect from this proposal will allow us to assess the relationship
-between autonomic function, neuropsychiatric status, and cardiac
-catherization. Our aims are:
+- disturbances of neurocardiac axis lead to ANS dysfunction
+- quantified measures of ANS tone will reflect brain and heart metrics
+- ECG measures reflect this (PEP, T wave repolarization, HRV)
 
 #### Aims
-
-
-1.  **To determine the effect of neuropsychiatric disturbances, as
-    determined by depressed mood and cognitive impairment, on autonomic
-    dysfunction.** *[Hypothesis]{.underline}: (A) High levels of
-    depressive symptoms (Patient Health Questionnaire-9, PHQ-9), and (B)
-    cognitive impairment (Montreal Cognitive Assessment, MoCA) will be
-    associated with low Dyx.*
-
-2.  **To evaluate the relationship of autonomic dysfunction, measured by
-    abnormal HRV, to the spectrum of progressive CAD.**
-    *[Hypothesis]{.underline}:* *Low Dyx (\<2.0 units) in the morning
-    hours associates with an increased odds of finding obstructive CAD
-    (stenosis [\>]{.underline} 70%). When evaluated as a continuous
-    exposure, Dyx negatively associates with CAD plaque burden (Gensini
-    score) in a dose-response relationship.*^19^
 
 Determine relationship between MSNA and ECG findings during mental stress.
 	P-wave morphology
@@ -124,3 +98,5 @@ ECG data and cardiac catherization
 	Add machine learning or digital signal processing coursework
 MSNA and ECG clinical outcomes
 	MSNA data has been collected with Jeanie Park
+
+
