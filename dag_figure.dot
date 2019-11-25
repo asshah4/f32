@@ -1,0 +1,29 @@
+# Figure 3 diagram
+
+digraph {
+
+# overall graph settings
+graph [layout = dot, rankdir = LR, overlap = FALSE, fontname = "Arial"]
+edge [fontname = "Arial", penwidth = 2  ];
+node [shape = rectangle, fontname = "Arial"]
+
+# Important nodes
+sad [label = <Depression>, rank = 1]
+cad [label = <Coronary<br/>Artery<br/>Disease>, rank = 1]
+
+# Covariates
+sex [label = <Sex>, rank = 2]
+age [label = <Age>, rank = 2]
+
+# Nodes of importance
+#hrv [label = <Autonomic<br/>Dysfunction<br/><font point-size='10'>(<I>Dyx</I>)</font>>]
+#cad [label = <Obstructive CAD>]
+#nvi [label = <Neuropsychological<br/>Factors>]
+
+# Edge definitions
+sad -> cad [dir = forward, tailport = ne, headport = nw, label = "Aim 1"]
+cad -> sad [dir = forward, tailport = sw, headport = se, label = "Aim 2"]
+
+sex -> {sad cad} [dir = backward]
+age -> {sad cad} [dir = forward]
+}
