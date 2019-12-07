@@ -3,27 +3,22 @@
 digraph {
 
 # overall graph settings
-graph [layout = dot, rankdir = LR, overlap = FALSE, fontname = "Arial"]
-edge [fontname = "Arial", penwidth = 2  ];
+graph [layout = neato, rankdir = LR, overlap = FALSE, fontname = "Arial"]
+edge [fontname = "Arial", len = 1.7, arrowsize = .9]
 node [shape = rectangle, fontname = "Arial"]
 
 # Important nodes
-sad [label = <Depression>, rank = 1]
-cad [label = <Coronary<br/>Artery<br/>Disease>, rank = 1]
-
-# Covariates
-sex [label = <Sex>, rank = 2]
-age [label = <Age>, rank = 2]
-
-# Nodes of importance
-#hrv [label = <Autonomic<br/>Dysfunction<br/><font point-size='10'>(<I>Dyx</I>)</font>>]
-#cad [label = <Obstructive CAD>]
-#nvi [label = <Neuropsychological<br/>Factors>]
+sad [label = <Depression>]
+cad [label = <Coronary<br/>Artery<br/>Disease>]
+ans [label = <Autonomic<br/>Dysfunction<br/><font>(<I>Dyx</I>)</font>>]
 
 # Edge definitions
-sad -> cad [dir = forward, tailport = ne, headport = nw, label = "Aim 1"]
-cad -> sad [dir = forward, tailport = sw, headport = se, label = "Aim 2"]
+sad -> cad [dir = both, len = 2.2]
+sad -> ans [dir = forward, headport = nw, tailport = s, label = <     Specific  <br/>     Aim 1  >]
+ans -> sad [dir = forward, headport = s, tailport = nw]
+cad -> ans [dir = forward, headport = ne, tailport = s] 
+ans -> cad [dir = forward, headport = s, tailport = ne, label = <     Specific<br/>     Aim 2>]
 
-sex -> {sad cad} [dir = backward]
-age -> {sad cad} [dir = forward]
+# Rank
+{rank = same sad cad}
 }
